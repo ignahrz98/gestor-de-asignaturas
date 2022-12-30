@@ -67,11 +67,12 @@ diario dia;
 evento eventodata;
 
 int main(){
+	system("color 9f");
 	system("title Gestor de Asignaturas 1.1");
 	entrando(); //Llamar a funcion para animacion de entrada.
 	int m;
 	do {
-		system("color 70");
+		//system("color 70");
 		system("cls");
 		do {
 		//Mostrar menu principal del programa.
@@ -96,19 +97,19 @@ int main(){
 	
     	switch(m) {
 		    case 1:
-		    	system("color 4f");
+		    	//system("color 4f");
 		    	unidades_curriculares(); //llamar funcion de menu para unidades curriculares.
 	    	break;
 		    case 2:
-		    	system("color 2f");
+		    	//system("color 2f");
 		    	registrar_dia(); //Llamar funcion para registrar dia.
 	    	break;
 	    	case 3:
-	    		system("color 02");
+	    		//system("color 02");
 	    		ver_registro(); //Llamar funcion para ver registro diario.
 		    break;
 		    case 4:
-		    	system("color 9f");
+		    	//system("color 9f");
 		    	eventos(); //Llamar a funcion para menu eventos.
 		    break;
 	    }
@@ -121,7 +122,7 @@ int main(){
 
 void entrando() { //Funcion para animacion de entrada.
 	int i, x=2, tam=0;
-	system("color 31");
+	//system("color 31");
 	//Animacion marco.
 	for(i=0;i<25;i++) {
 		gotoxy(0,i);printf("*");
@@ -186,7 +187,7 @@ void entrando() { //Funcion para animacion de entrada.
 }
 
 void saliendo() { //Funcion para animacion de salida.
-    int y=2; system("color 3a");
+    int y=2; //system("color 3a");
     gotoxy(5,y);printf(" #####  ####### ######  ######     #    #     # ######  ####### ");y++;
     gotoxy(5,y);printf("#     # #       #     # #     #   # #   ##    # #     # #     # ");y++;
     gotoxy(5,y);printf("#       #       #     # #     #  #   #  # #   # #     # #     # ");y++;
